@@ -58,7 +58,7 @@ void Addition()
 
         //Printing Sum
         printf("\nPrinting the Sum of both Matrices\n");
-        for(i = 0;i < r2;i++)
+        for(i = 0;i < c1;i++)
         {
             printf("| ");
             for(j = 0;j < c2;j++ )
@@ -128,15 +128,15 @@ void Multiplication()
             }
         }
 
-        for(i = 0;i < c1;i++)
+        for(i = 0;i < r2;i++)
         {
-            for(j = 0;j < c2;j++ )
+            for(j = 0;j < c1;j++ )
             {
                 //initiallized the matrix as 0
                 mm[i][j] = 0;
                 
                 //Multiplication of two Matrix and adding to another matrix
-                for(k = 0;k < c1;k++ )
+                for(k = 0;k < c2;k++ )
                 {
                     mm[i][j] += m1[i][k] * m2[k][j];
                 }
@@ -148,7 +148,7 @@ void Multiplication()
         for(i = 0;i < r2;i++)
         {
             printf("| ");
-            for(j = 0;j < c2;j++ )
+            for(j = 0;j < c1;j++ )
             {
                 printf(" %d ",mm[i][j]);
             }
