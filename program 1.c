@@ -19,7 +19,7 @@ void Addition()
     printf("Column : ");
     scanf("%d",&c2);
 
-    //Array declaration And intialization
+    //Array declaration
     int m1[r1][c1],m2[r2][c2],am[c1][c2];
 
     //for checking the column equality
@@ -95,7 +95,7 @@ void Multiplication()
     printf("Column : ");
     scanf("%d",&c2);
 
-    //Array declaration And intialization
+    //Array declaration
     int m1[r1][c1],m2[r2][c2],mm[r2][c1];
 
     //for checking both dimension equality
